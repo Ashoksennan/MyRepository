@@ -8,6 +8,6 @@ public interface IDonarLoginContract {
 
     }
     interface presenter{
-
+        void loginFunctionality();
     }
 }

@@ -11,4 +11,8 @@ public class DonorLoginPresenter implements IDonarLoginContract.presenter {
         this.view = view;
     }
 
+    @Override
+    public void loginFunctionality() {
+
+    }
 }
