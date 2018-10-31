@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.DonarLoginActivity">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:padding="8dp"
+                android:textSize="24dp"
+                android:text="Prematix"
+                app:fontFamily="@font/abril_fatface" />
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_margin="4dp"
+                android:id="@+id/text_field_boxes_donar_phno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="Donar Phno"
+                app:hasClearButton="true"
+                app:minCharacters="10"
+                app:maxCharacters="12"
+                >
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/edittext_donar_phno"
+                    android:layout_width="wrap_content"
+                    android:maxLength="12"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_margin="4dp"
+                android:id="@+id/text_field_boxes_donar_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="Password"
+                app:hasClearButton="true"
+                app:minCharacters="6"
+                app:maxCharacters="12"
+                >
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/edittext_donar_password"
+                    android:layout_width="wrap_content"
+                    android:maxLength="12"
+                    android:layout_height="wrap_content"
+                    />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+            <LinearLayout
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Remember Me"
+                    android:id="@+id/cb_rememberme"
+                    android:padding="8dp"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:id="@+id/tv_forgotpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"/>
+            </LinearLayout>
+            <Button
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ed_border_box_rb_linear_selected"
+                android:text="Login"
+                android:padding="16dp"
+                android:id="@+id/btn_login"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dont have Account?"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv_registernow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register Now"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

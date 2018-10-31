@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hint_donarName">Donar Name</string>
+    <string name="error_donarName">requierd*</string>
+</resources>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".activity.Donar_Register_Activity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                        android:id="@+id/text_field_boxes_donar_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:labelText="Donar Name"
+                        app:hasClearButton="true"
+                        app:helperText="Eg: Ashok Sennan"
+                        >
+
+                        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                            android:id="@+id/edittext_donar_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                        android:id="@+id/text_field_boxes_donar_phno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:labelText="Phno"
+                        app:maxCharacters="10"
+                        app:hasClearButton="true"
+                        app:helperText="Eg: 9952102045"
+                        >
+
+                        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                            android:id="@+id/edittext_donar_phno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical">
+                    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                        android:id="@+id/text_field_boxes_donar_mailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:labelText="Email Id"
+                        app:hasClearButton="true"
+                        app:helperText="Eg: ashoksennan430@gmail.com"
+                        >
+
+                        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                            android:id="@+id/edittext_donar_mailid"
+                            android:layout_width="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical">
+                    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                        android:id="@+id/text_field_boxes_donarpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:labelText="Password"
+                        app:hasClearButton="true"
+                        app:minCharacters="6"
+                        app:maxCharacters="10"
+                        >
+
+                        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                            android:id="@+id/edittext_donar_password"
+                            android:layout_width="wrap_content"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical">
+                    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                        android:id="@+id/text_field_boxes_confirm_donarpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:labelText="Confirm Password"
+                        app:hasClearButton="true"
+                        app:minCharacters="6"
+                        app:maxCharacters="10"
+                        >
+
+                        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                            android:id="@+id/edittext_confirm_password"
+                            android:layout_width="wrap_content"
+                            android:inputType="textPassword"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="vertical">
+                    <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                        android:id="@+id/text_field_boxes_confirm_donar_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:labelText="Address"
+                        app:hasClearButton="true"
+                        app:helperText="Eg: Hosur"
+                        app:maxCharacters="70"
+                        >
+
+                        <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                            android:id="@+id/edittext_confirm_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/allerta"
+                        android:text="Gender" />
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Male"
+                                android:id="@+id/rbtn_male"/>
+                            <RadioButton
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Female"
+                                android:id="@+id/rbtn_female"/>
+
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:padding="8dp"
+                            android:textColor="#6e0101"
+                            android:fontFamily="@font/allerta"
+                            android:text="Donar Blood Group" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="A+"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/allerta"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:textColor="@android:color/white"
+                                android:background="@drawable/selected_border"/>
+                            <TextView
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="A-"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/allerta"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:background="@drawable/border"/>
+                            <TextView
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="B+"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/allerta"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:background="@drawable/border"/>
+                            <TextView
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="B-"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/allerta"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:background="@drawable/border"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="O+"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/allerta"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:background="@drawable/border"/>
+                            <TextView
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="O-"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/allerta"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:background="@drawable/border"/>
+                            <TextView
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="AB+"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/allerta"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:background="@drawable/border"/>
+                            <TextView
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="AB-"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/allerta"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:background="@drawable/border"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:orientation="vertical">
+                        <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                            android:id="@+id/text_field_boxes_confirm_donar_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:labelText="Date of Birth"
+                            app:helperText="Eg: 12/09/1996"
+                            app:hasClearButton="true"
+                            >
+
+                            <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                                android:id="@+id/edittext_confirm_donar_dob"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                />
+
+                        </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/allerta"
+                    android:padding="16dp"
+                    android:background="@drawable/ed_border_box_rb_linear_selected"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
