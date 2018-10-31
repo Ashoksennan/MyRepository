@@ -70,8 +70,10 @@ Retrofit retrofit;
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(!edittext_donar_phno.getText().toString().isEmpty() && !edittext_donar_password.getText().toString().isEmpty()){
+                    Toast.makeText(DonarLoginActivity.this, "Login success!", Toast.LENGTH_SHORT).show();
+                }
 
-                Toast.makeText(DonarLoginActivity.this, "Login success!", Toast.LENGTH_SHORT).show();
             }
         });
         tv_registernow.setOnClickListener(new View.OnClickListener() {
